@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apisit Tongchai - Portfolio</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Prompt font to the entire page */
+        body {
+            font-family: 'Prompt', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Simple animation for section headers */
+        h2 {
+            border-bottom: 3px solid #3b82f6; /* blue-500 */
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">
+                <a href="#">Apisit Tongchai</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">About Me</a>
+                <a href="#experience" class="text-gray-600 hover:text-blue-600 transition">Experience</a>
+                <a href="#publications" class="text-gray-600 hover:text-blue-600 transition">Publications</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a>
+                <!-- Language Switcher -->
+                <div class="border-l border-gray-300 h-6"></div>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">TH</a>
+            </div>
+            <!-- Mobile Menu Button (Optional) -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">About Me</a>
+            <a href="#experience" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Experience</a>
+            <a href="#publications" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Publications</a>
+            <a href="#contact" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50">Contact</a>
+            <a href="index.html" class="block px-6 py-2 text-sm text-gray-700 hover:bg-blue-50 font-medium">Thai Version</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="home" class="flex flex-col md:flex-row items-center justify-center text-center md:text-left py-16">
+            <!-- Profile Image -->
+            <div class="w-48 h-48 md:w-64 md:h-64 mb-8 md:mb-0 md:mr-12">
+                <img src="profile.jpg" alt="Apisit Tongchai Profile Picture" class="rounded-full shadow-xl object-cover w-full h-full">
+            </div>
+            <!-- Hero Text -->
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Apisit Tongchai</h1>
+                <p class="mt-4 text-lg md:text-xl text-blue-600 font-medium">Specialist in STEM Education and AI Application for Learning</p>
+                <p class="mt-2 text-gray-600">Specialist, Technology Department, The Institute for the Promotion of Teaching Science and Technology (IPST)</p>
+                <div class="mt-6 flex justify-center md:justify-start space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition shadow-lg">Contact Me</a>
+                    <a href="#publications" class="bg-white text-blue-600 border border-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition shadow-lg">View Works</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-4">Career Path & Education</h3>
+                <p class="mb-4 text-gray-700 leading-relaxed">
+                    I am dedicated to advancing Thai education, particularly in Science, Mathematics, and Technology, to meet international standards. My expertise lies in curriculum development, teacher training, promoting STEM-based learning, and applying Artificial Intelligence (AI) to enhance students' thinking and problem-solving skills.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 mt-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3 text-blue-700">Education</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li><b>Ph.D. in Science and Technology Education</b>, Mahidol University (DPST Scholarship)</li>
+                            <li><b>Diploma in Teaching Profession</b>, Khonkaen University</li>
+                            <li><b>B.Sc. in Physics (2nd Hons.)</b>, Ubonratchathani University</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-3 text-blue-700">Expertise</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>K-12 STEM Education</li>
+                            <li>AI in Science and Technology Learning</li>
+                            <li>Curriculum and Teacher Development</li>
+                            <li>Physics Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16">
+            <h2 class="text-3xl font-bold mb-8">Experience</h2>
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold mb-6">Work Experience at IPST</h3>
+                <div class="relative border-l-2 border-blue-200 pl-6 space-y-8">
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                        <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[35px] mt-1.5"></div>
+                        <p class="font-semibold text-gray-500">Oct 2023 - Present</p>
+                        <h4 class="text-xl font-bold mt-1">Specialist, Technology Department</h4>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                         <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[35px] mt-1.5"></div>
+                        <p class="font-semibold text-gray-500">Apr 2018 – Sep 2023</p>
+                        <h4 class="text-xl font-bold mt-1">Specialist, Teacher and Educational Personal Development Department</h4>
+                    </div>
+                     <!-- Timeline Item -->
+                    <div class="relative">
+                         <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[35px] mt-1.5"></div>
+                        <p class="font-semibold text-gray-500">Dec 2016 - Mar 2018</p>
+                        <h4 class="text-xl font-bold mt-1">Specialist, Technology Department</h4>
+                    </div>
+                    <!-- Timeline Item -->
+                    <div class="relative">
+                         <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[35px] mt-1.5"></div>
+                        <p class="font-semibold text-gray-500">Apr 2013 – Nov 2016</p>
+                        <h4 class="text-xl font-bold mt-1">Specialist, National STEM Education Center</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="py-16">
+            <h2 class="text-3xl font-bold mb-8">Publications</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- International Publications -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">International Publications</h3>
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">Nurturing creativity through simplicity: Accessible STEM lessons for every classroom.</p>
+                            <p class="text-sm text-gray-600 mt-1">Technology and Engineering Education, 2(3), (2024).</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">Paper Rocket Challenge.</p>
+                            <p class="text-sm text-gray-600 mt-1">Technology and Engineering Teacher. 82(1), (2022).</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">The Analysis of SMT Teachers' Self-Efficacy towards Enhancing Student Thinking and Problem-Solving Skills.</p>
+                            <p class="text-sm text-gray-600 mt-1">Journal of Science and Mathematics Education in Southeast Asia, 43, (2020).</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Thai Publications -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Thai Publications</h3>
+                     <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">แนวทางการส่งเสริมสมรรถนะการคิดขั้นสูงและการวัดประเมินผล.</p>
+                            <p class="text-sm text-gray-600 mt-1">วารสารสมาคมครูวิทยาศาสตร์ คณิตศาสตร์และเทคโนโลยีแห่งประเทศไทย, 30, (2565).</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">แนวทางการส่งเสริมการคิดขั้นสูงด้วยกิจกรรมจรวดหลอดดูด (Straw Rocket).</p>
+                            <p class="text-sm text-gray-600 mt-1">นิตยสาร สสวท. 50(237), (2565).</p>
+                        </div>
+                         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">
+                            <p class="font-bold">ความสำคัญของวิศวกรรมในการจัดการเรียนรู้วิทยาศาสตร์ในศตวรรษที่ 21.</p>
+                            <p class="text-sm text-gray-600 mt-1">วารสารศึกษาศาสตร์ปริทัศน์, 31(3), (2559).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <p class="text-lg text-gray-600 mb-8">Feel free to reach out for collaboration, discussion, or further information.</p>
+            <div class="bg-white inline-block p-8 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold">Apisit Tongchai</p>
+                <p class="mt-4">
+                    <a href="mailto:atong@ipst.ac.th" class="text-blue-600 hover:underline">📧 atong@ipst.ac.th</a>
+                </p>
+                 <p class="mt-2">
+                    <a href="mailto:a.tongchai@gmail.com" class="text-blue-600 hover:underline">� a.tongchai@gmail.com</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2024 Apisit Tongchai. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+�
